@@ -1,6 +1,7 @@
 """Third party modules"""
 import ldap
 
+
 # LDAP settings
 LDAP_SERVER = "ldap://server"
 BASE_DN = "dc=example,dc=com"
