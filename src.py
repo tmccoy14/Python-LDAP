@@ -19,7 +19,7 @@ ATTRIBUTES_TO_SEARCH = ["memberOf"]
 
 
 def ldap_connection():
-    """open connection with LDAP server"""
+    """Open connection with LDAP server."""
 
     # Open a connection with the LDAP server
     connect = ldap.initialize(LDAP_SERVER)
@@ -35,7 +35,7 @@ def ldap_connection():
 
 
 def ldap_search(ldap_connect, user):
-    """search LDAP server"""
+    """Search LDAP server for groups a user is a member of."""
 
     records = ldap_connect.search_s(
         BASE_DN,
